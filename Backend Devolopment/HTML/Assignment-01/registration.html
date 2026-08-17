@@ -1,0 +1,226 @@
+<!-- =========================================================
+     HTML BASICS — ASSIGNMENT 01
+     QUESTION 4 — CREATE A STUDENT REGISTRATION FORM
+     =========================================================
+
+     Question:
+     Create a webpage called "Student Registration Form".
+
+     The form should collect:
+     1. Full Name — text input
+     2. Email — email input
+     3. Password — password input
+     4. Date of Birth — date input
+     5. Gender — radio buttons
+     6. Favorite Programming Languages — checkboxes
+     7. City — dropdown/select menu with at least 4 cities
+     8. About Yourself — textarea
+     9. Submit button
+     10. Reset button
+
+     Your form should also use appropriate <label> elements
+     for the form fields.
+
+     Bonus:
+     Make the Name, Email, and Password fields required.
+
+     Task:
+     Write the HTML code for this registration form.
+
+     =========================================================
+     ANSWER
+     =========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f0ff;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a4c93;
+        }
+
+        form {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        fieldset {
+            border: 2px solid #c8a2ff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        legend {
+            color: #6a4c93;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            padding: 8px;
+            border: 1px solid #c8a2ff;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+
+        textarea {
+            width: 90%;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #8e6bc7;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: #ddd;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <p>
+                <label for="fullName">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label>
+                <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                >
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Additional Information</legend>
+
+            <p>
+                <strong>Gender:</strong>
+            </p>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <p>
+                <strong>Favorite Programming Languages:</strong>
+            </p>
+
+            <input type="checkbox" id="html" name="language" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="language" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="javascript" name="language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <p>
+                <label for="city">City:</label>
+
+                <select id="city" name="city">
+                    <option value="">Select your city</option>
+                    <option value="karachi">Karachi</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="islamabad">Islamabad</option>
+                    <option value="peshawar">Peshawar</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="about">About Yourself:</label>
+            </p>
+
+            <textarea
+                id="about"
+                name="about"
+                rows="5"
+                cols="40"
+                placeholder="Tell us something about yourself..."
+            ></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>
