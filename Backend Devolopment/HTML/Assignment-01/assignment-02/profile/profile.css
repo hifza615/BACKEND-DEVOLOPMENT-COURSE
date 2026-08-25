@@ -1,0 +1,261 @@
+/* =========================================================
+   QUESTION 5 — PROFILE PAGE CSS
+   ========================================================= */
+
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    position: relative;
+
+    background-color: #1e3a8a;
+    color: white;
+
+    height: 35vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 3rem;
+}
+
+
+header p {
+    font-size: 1.2rem;
+}
+
+
+/* Navigation */
+nav {
+    background-color: #172554;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 15px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+
+/* Main */
+main {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+/* ID Selector */
+#about {
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 35px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 15px;
+}
+
+
+/* Image */
+.about-image img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #2563eb;
+}
+
+
+/* About Content */
+.about-content {
+    width: 60%;
+}
+
+
+.about-content h2,
+#skills h2,
+article h2,
+aside h2 {
+    color: #1e3a8a;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 12px;
+}
+
+
+/* Skills Section */
+#skills {
+    margin-top: 40px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+}
+
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+
+/* Class Selector */
+.skill {
+    display: block;
+
+    padding: 12px 25px;
+
+    background-color: #dbeafe;
+
+    color: #1e40af;
+
+    border: 1px solid #93c5fd;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* Journey Section */
+.journey-section {
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* Article */
+article {
+    width: 65%;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #2563eb;
+}
+
+
+/* Aside */
+aside {
+    width: 35%;
+
+    background-color: #eff6ff;
+
+    padding: 30px;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 15px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #172554;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+}
+
+
+footer a {
+    color: #93c5fd;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    #about,
+    .journey-section {
+        flex-direction: column;
+    }
+
+    .about-content,
+    article,
+    aside {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+}

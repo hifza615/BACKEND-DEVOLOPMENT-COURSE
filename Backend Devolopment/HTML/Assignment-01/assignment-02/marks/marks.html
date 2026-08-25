@@ -1,0 +1,100 @@
+<!-- =========================================================
+     HTML & CSS BASICS — ASSIGNMENT 02
+     QUESTION 3 — STYLE YOUR "STUDENT MARKS" TABLE
+
+     Question:
+     Take the marks.html file from Assignment 01 and apply
+     CSS to make the table look professional.
+
+     Requirements:
+     1. Style table, caption, th and td.
+     2. Add background color to the table header.
+     3. Give different styling to data cells.
+     4. Add borders around table and cells.
+     5. Use padding and margin.
+     6. Apply font sizes and text alignment.
+     7. Use at least three selector types.
+     8. Use a selector to style the Total column.
+     =========================================================
+     ANSWER
+     =========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Marks</title>
+
+    <link rel="stylesheet" href="marks.css">
+</head>
+
+<body>
+
+    <table id="marks-table">
+
+        <caption>Student Marks</caption>
+
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Marks Obtained</th>
+                <th>Total Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>English</td>
+                <td>43</td>
+                <td>50</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Mathematics</td>
+                <td>45</td>
+                <td>50</td>
+                <td>A+</td>
+            </tr>
+
+            <tr>
+                <td>Biology</td>
+                <td>41</td>
+                <td>50</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Chemistry</td>
+                <td>42</td>
+                <td>50</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Physics</td>
+                <td>40</td>
+                <td>50</td>
+                <td>A</td>
+            </tr>
+
+            <tr class="total-row">
+                <td>Total</td>
+                <td>211</td>
+                <td>250</td>
+                <td>A</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

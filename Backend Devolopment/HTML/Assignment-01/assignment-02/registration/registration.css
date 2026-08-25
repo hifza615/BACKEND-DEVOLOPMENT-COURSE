@@ -1,0 +1,184 @@
+/* =========================================================
+   QUESTION 4 — REGISTRATION FORM CSS
+   ========================================================= */
+
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #e0f2fe;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main Container */
+.form-container {
+    position: relative;
+
+    width: 90%;
+    max-width: 650px;
+
+    margin: 40px auto;
+    padding: 35px;
+
+    background-color: white;
+
+    border: 2px solid #bae6fd;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading */
+.form-container h1 {
+    color: #0369a1;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* Paragraph */
+.form-intro {
+    color: #64748b;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+form > label {
+    display: block;
+
+    color: #334155;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    font-size: 1rem;
+
+    background-color: #f8fafc;
+}
+
+
+/* Focus */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0284c7;
+}
+
+
+/* Flexbox — Gender */
+.gender-options {
+    display: flex;
+
+    gap: 30px;
+
+    margin: 10px 0;
+}
+
+
+/* Flexbox — Languages */
+.language-options {
+    display: flex;
+
+    gap: 25px;
+
+    margin: 10px 0;
+}
+
+
+/* Radio and Checkbox Labels */
+.gender-options label,
+.language-options label {
+    font-weight: normal;
+    color: #475569;
+}
+
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+
+/* Buttons */
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+/* Button Styling */
+button {
+    padding: 12px 30px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Submit */
+button[type="submit"] {
+    background-color: #0284c7;
+    color: white;
+}
+
+
+/* Reset */
+button[type="reset"] {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+
+/* Hover */
+button:hover {
+    opacity: 0.85;
+}

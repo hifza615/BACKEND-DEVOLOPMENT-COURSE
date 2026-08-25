@@ -1,0 +1,131 @@
+<!-- =========================================================
+     HTML & CSS BASICS — ASSIGNMENT 02
+     QUESTION 1 — STYLE YOUR "MY INTRODUCTION" PAGE
+
+     Question:
+     Take the introduction.html file from Assignment 01
+     and improve its appearance using CSS.
+
+     Requirements:
+     1. Use Inline CSS on the main h1.
+     2. Add Internal CSS inside the head.
+     3. Style h2, p, ul and ol.
+     4. Use different colors, fonts, sizes and alignment.
+     5. Use at least one class selector.
+     6. Use at least one ID selector.
+     7. Use px, %, and rem units.
+     8. Demonstrate Inline CSS, Internal CSS and selectors.
+     =========================================================
+     ANSWER
+     =========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Introduction</title>
+
+    <style>
+
+        /* Element Selector */
+        body {
+            background-color: #f4f7fb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Element Selector */
+        h2 {
+            color: #1e40af;
+            font-size: 1.5rem;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        /* Element Selector */
+        p {
+            color: #475569;
+            font-size: 18px;
+            line-height: 1.6;
+            width: 80%;
+        }
+
+        /* Class Selector */
+        .intro {
+            color: #2563eb;
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+
+        /* ID Selector */
+        #education {
+            color: #7c3aed;
+            background-color: #ede9fe;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Unordered List */
+        ul {
+            color: #047857;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Ordered List */
+        ol {
+            color: #c2410c;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS applied to main h1 -->
+    <h1
+        style="color: #2563eb; font-size: 40px; text-align: center;">
+        My Introduction
+    </h1>
+
+    <p class="intro">
+        My name is Hifza Emaan. I am a student and an aspiring
+        web developer who enjoys learning technology and creating
+        websites.
+    </p>
+
+    <h2 id="education">My Education</h2>
+
+    <p>
+        I am currently studying in Class X. I am interested in
+        computer science and web development.
+    </p>
+
+    <h2>My Hobbies</h2>
+
+    <ul>
+        <li>Web Development</li>
+        <li>Learning New Technologies</li>
+        <li>Reading</li>
+        <li>Exploring New Ideas</li>
+    </ul>
+
+    <h2>My Goals</h2>
+
+    <ol>
+        <li>Improve my programming skills.</li>
+        <li>Become a professional web developer.</li>
+        <li>Create useful websites and applications.</li>
+        <li>Continue learning new technologies.</li>
+    </ol>
+
+</body>
+
+</html>
