@@ -1,4 +1,4 @@
-```javascript
+
 // Login Validation
 
 var username = "hifza";
@@ -12,4 +12,3 @@ if (username == correctUsername && password == correctPassword) {
 } else {
     console.log("Invalid Username or Password");
 }
-```
